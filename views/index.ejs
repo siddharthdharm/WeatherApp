@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Weather App</title>
+    
+    <!-- <link rel="stylesheet" type="text/css" href="/css/style.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <br><br>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <center><h1>Weather App</h1></center>
+            <center><h4>(Cloud Computing Assignment)</h4></center>
+          </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+
+    <br><br><br><br>
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <fieldset>
+            
+            <form action="/" method="post">
+              <div class="input-group">
+                <input name="city" type="text" class="form-control" placeholder="Enter a city">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </fieldset>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <% if(weather !== null){ %>
+              <center><h3>Weather Report :</h3></center>
+              <br>
+              <p style="font-size: 20px"><%= weather %></p>
+              <% } %>
+
+              <% if(error !== null){ %>
+                <p><%= error %></p>
+          <% } %>
+        </div>
+        <div class="col-lg-3"></div>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+      <div class="row">
+        <b><center><p style="color: rgb(0, 123, 254);">Made with the help of APIWeather!</center></b>
+        <b><center><p style="color: rgb(0, 123, 254);">Birla Institute of Technology and Science (BITS), Pilani - Hyderabad.</center></b></p>
+      </div>
+    </footer>
+
+  </body>
+</html>

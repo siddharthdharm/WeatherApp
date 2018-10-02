@@ -1,2 +1,1 @@
-# WeatherApp
-Weather App deployed on Heroku
+# Weather App
